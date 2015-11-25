@@ -6,11 +6,15 @@
 //  Copyright © 2015年 李晓晋. All rights reserved.
 //
 #include <iostream>
-#define N 5
+//#define N 100
 int main(int argc, const char * argv[]) {
         // insert code here...
-        int a[N];
+        int *a;
         int i,j,temp;
+        int N;
+        scanf("%d",&N);
+        a=(int *)malloc(N*4);
+    
         for(i=0;i<N;i++)
             scanf("%d",&a[i]);
         for(i=0;i<N-1;i++)
@@ -25,9 +29,9 @@ int main(int argc, const char * argv[]) {
                  }
             }
         }
+    
         for (i=0;i<N;i++)
            printf("%d\n",a[i]);
+        free(a);
         return 0;
     }
-
-
