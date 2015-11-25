@@ -16,7 +16,6 @@
             exit(0);
         *a=100;
         printf("a=%x *a=%x\n",a,*a);
-        
         return 0;
     }
 
