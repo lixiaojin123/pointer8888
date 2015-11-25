@@ -15,7 +15,7 @@
         if(a==0)
             exit(0);
         *a=100;
-        printf("a=%x *a=%x\n",a,*a);
+        printf("a=%x    *a=%x\n",a,*a);
         return 0;
     }
 
